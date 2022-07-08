@@ -10,7 +10,6 @@ public class StackWin : MonoBehaviour
         {
             PlayerController.Ins.PlayWinnerAnim();
             GameManager.Ins.ChangeGameState(GameState.Win);
-            
         }
     }
 }

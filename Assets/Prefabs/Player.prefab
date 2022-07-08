@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &548092849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 548092850}
+  m_Layer: 6
+  m_Name: Raycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548092850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548092849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7013772543721314578}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1929468799
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,9 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7013772543721314578}
-  - component: {fileID: -5397126062324959599}
   - component: {fileID: 1459329729}
-  - component: {fileID: 2022281873}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -547,22 +576,10 @@ Transform:
   - {fileID: 1929468800}
   - {fileID: 3592550067079526448}
   - {fileID: 2012503161}
+  - {fileID: 548092850}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
---- !u!65 &-5397126062324959599
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7016110835733761226}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.2135575, z: 1}
-  m_Center: {x: 0, y: 0.98303616, z: 0}
 --- !u!114 &1459329729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,29 +595,8 @@ MonoBehaviour:
   Stack: {fileID: 2390993825145339497}
   StackHolder: {fileID: 1929468799}
   StackVanish: {fileID: 2012503160}
-  PlayerSpeed: 10
---- !u!195 &2022281873
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7016110835733761226}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  Model: {fileID: 7079729540866361361}
+  PlayerSpeed: 15
 --- !u!1 &7016125623900574683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1220,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 07a30b9ee2b49db47a46f78a4b4f9e0e, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 07a30b9ee2b49db47a46f78a4b4f9e0e, type: 2}
+  - {fileID: 7400000, guid: 8610587155c46ed4090ac17e3f424f3c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
