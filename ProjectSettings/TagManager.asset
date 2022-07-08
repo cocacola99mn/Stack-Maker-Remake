@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - StackAdd
-  - Normal
-  - Wall
+  - StackPlus
   layers:
   - Default
   - TransparentFX
@@ -14,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Wall
+  - 
+  - 
   - 
   - 
   - 
